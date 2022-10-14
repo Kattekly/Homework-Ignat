@@ -17,15 +17,15 @@ import avatar from './avatar.png'
 export type MessageType = {
     id: number
     user: userType
-    message: messageType
+    message: textType
 }
 
-type userType = {
+ export type userType = {
     avatar: string
     name: string
 }
 
-type messageType = {
+export type textType = {
     text: string
     time: string
 }
