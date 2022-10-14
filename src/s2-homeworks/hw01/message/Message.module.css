@@ -3,15 +3,25 @@
 }
 
 .imageAndText {
-
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    gap: 10px;
+    color: #fff;
+    margin-bottom: 5px;
 }
 
 .imageAndText img {
-
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
 }
 
 .text {
-
+    background: #0066CC;
+    padding: 5px 10px;
+    box-shadow: 0 5px 20px rgba(29, 33, 38, 0.03), 0 1px 2px rgba(29, 33, 38, 0.1);
+    border-radius: 10px;
 }
 
 .text:after {
@@ -19,13 +29,25 @@
 }
 
 .name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 3px;
 
 }
 
 .messageText {
-
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .time {
-
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 13px;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 12px;
 }
