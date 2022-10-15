@@ -7,8 +7,8 @@ type GreetingPropsType = {
     addUser: () => void // need to fix any
     onBlur: () => void // need to fix any
     onEnter: any // need to fix any
-    error: any // need to fix any
-    totalUsers: any // need to fix any
+    error: string // need to fix any
+    totalUsers: number // need to fix any
     lastUserName?: string // need to fix any
 }
 
