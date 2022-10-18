@@ -23,7 +23,7 @@ type SuperInputTextPropsType = Omit<DefaultInputPropsType, 'type'> & {
 
 const SuperInputText: React.FC<SuperInputTextPropsType> = (
     {
-        onChange,
+        onChange ,
         onChangeText,
         onKeyPress,
         onEnter,
