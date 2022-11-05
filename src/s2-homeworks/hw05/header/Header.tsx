@@ -20,6 +20,8 @@ export const Header: FC<PropsType> = ({handleOpen}) => {
                 ? 'Junior'
                 : currentPath === PATH.JUNIOR_PLUS
                     ? 'Junior Plus'
+                    : currentPath === '/'
+                        ? 'Homework #5'
                     : 'Error'
     return (
         <>
