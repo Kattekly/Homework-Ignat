@@ -1,4 +1,4 @@
-.sidebar {
+/*.sidebar {
     display: none;
 
 }
@@ -39,13 +39,14 @@
 
 .nav a:hover {
     color: #58ACFF;
-}
+}*/
 
 .nav a.active {
     text-decoration-line: underline;
     color: #0059B2;
 }
 
+/*
 .close {
     margin-top: 16px;
     margin-right: 10px;
@@ -57,4 +58,4 @@
 }
 
 .close img {
-}
+}*/
