@@ -11,7 +11,7 @@
     color: #CC0000;
 }
 
-input {
+.greetInputForm {
     width: 32.63vw;
     height: 36px;
     margin-bottom: 10px;
@@ -25,7 +25,7 @@ input {
 
 }
 
-input:focus {
+.greetInputForm:focus {
     border: 1px solid #00CC22;
 }
 

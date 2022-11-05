@@ -1,10 +1,24 @@
 .spanBlock {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
 }
 
 .span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
 }
 
 .input {
+    width: 276px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+    border: black;
 }
 
 .pen {
