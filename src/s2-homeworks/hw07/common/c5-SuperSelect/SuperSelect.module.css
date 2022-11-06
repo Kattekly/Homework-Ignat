@@ -1,9 +1,28 @@
 .select {
+    position: relative;
+    background: 95% url("./chevron-down.svg") no-repeat;
+    border: 1px solid #C2C2C2;
+    border-radius: 2px;
+    width: 165px;
+    height: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    appearance: none;
+    outline: none;
+    padding-left: 10px;
+    color: #A9A9A9;
 }
 
 .select:focus {
 }
 
+.select option {
+    color: #000;
+    display: inline-block;
+    border-radius: 200px;
+
+}
 
 .option:hover {
 }
