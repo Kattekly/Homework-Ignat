@@ -19,6 +19,7 @@
 
 .select option {
     color: black;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .option:hover {
