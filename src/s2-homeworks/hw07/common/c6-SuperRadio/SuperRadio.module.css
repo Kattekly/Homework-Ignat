@@ -9,7 +9,13 @@
 }
 
 .label {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .options {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }

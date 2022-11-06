@@ -18,9 +18,9 @@ export type ArrType = {
 }
 
 const arr = [
-    { id: 1, value: 'x' },
-    { id: 2, value: 'y' },
-    { id: 3, value: 'z' },
+    { id: 1, value: 'HTML/CSS' },
+    { id: 2, value: 'React' },
+    { id: 3, value: 'JS/TS' },
 ] // value может быть изменено
 
 const HW7 = () => {
