@@ -1,22 +1,43 @@
 .item {
+    height: 48px;
+    border-bottom: 1px solid #E5E5E5;
 }
 
 .item:last-of-type {
+    border-bottom: none;
 }
 
 .users {
+    width: 602px;
 }
 
 .buttonsContainer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding-bottom: 18px;
 }
 
 .container {
+    width: 600px;
 }
 
+.container table {
+    border-collapse: collapse;
+}
+
+
 .thead {
+    height: 36px;
+    background: lightgray;
+}
+
+.nameCol, .ageCol {
+    width: 300px;
 }
 
 .nameCol {
+    padding-left: 17px;
 }
 
 .ageCol {
