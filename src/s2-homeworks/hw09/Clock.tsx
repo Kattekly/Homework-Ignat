@@ -20,9 +20,12 @@ function Clock() {
     const stop = () => {
         // пишут студенты // поставить часы на паузу, обнулить ид таймера (timerId <- undefined)
         clearInterval(timerId)
+        setTimerId(0)
     }
 
-    const onMouseEnter = () => { // пишут студенты // показать дату если наведена мышка
+    const onMouseEnter = () => {
+
+        // пишут студенты // показать дату если наведена мышка
 
     }
     const onMouseLeave = () => { // пишут студенты // спрятать дату если мышка не наведена
