@@ -1,14 +1,22 @@
 .buttonsContainer {
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
 }
 
 .clock {
+
 }
 
 .watch {
+
 }
 
 .watch strong {
+
 }
 
 .more {
+
+    padding-top: 10px;
 }
