@@ -12,6 +12,7 @@ function Clock() {
     const start = () => {
         stop()
         const id: number = window.setInterval(() => {
+            setDate(new Date())
         }, 1000)
         setTimerId(id)
         // пишут студенты // запустить часы (должно отображаться реальное время, а не +1)
@@ -79,14 +80,14 @@ function Clock() {
             <div className={s.buttonsContainer}>
                 <SuperButton
                     id={'hw9-button-start'}
-                    disabled={!(start)} // пишут студенты // задизэйблить если таймер запущен
+                    disabled={timerId !== 0} // пишут студенты // задизэйблить если таймер запущен
                     onClick={start}
                 >
                     start
                 </SuperButton>
                 <SuperButton
                     id={'hw9-button-stop'}
-                    disabled={!!(start)} // пишут студенты // задизэйблить если таймер не запущен
+                    disabled={timerId === 0} // пишут студенты // задизэйблить если таймер не запущен
                     onClick={stop}
                 >
                     stop
