@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {MouseEvent} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import {AppStoreType} from './bll/store'
 import {loadingAC} from './bll/loadingReducer'
@@ -19,10 +19,11 @@ const HW10 = () => {
     const isLoading = useSelector<AppStoreType, any>(state => state.loading)
     const dispatch = useDispatch()
 
-    const setLoading = () => { // пишет студент // показать крутилку на 1,5 секунд
+    const setLoading = (isLoading: boolean) => { // пишет студент // показать крутилку на 1,5 секунд
         // dispatch
-
+        dispatch(loadingAC(isLoading))
         // setTimeout
+        setTimeout(setLoading, 1500)
     }
 
     return (
