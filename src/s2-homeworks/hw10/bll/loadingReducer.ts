@@ -1,4 +1,4 @@
-type initStatePropsType = {
+export type initStatePropsType = {
     isLoading: boolean
 }
 
