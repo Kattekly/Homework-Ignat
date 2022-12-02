@@ -14,8 +14,9 @@ export const themeReducer = (state = initState, action: changeThemeACType): Them
         // дописать
         case 'SET_THEME_ID': {
             return {
+
                 ...state,
-                themeId: action.themeId.find(el => el.themeId === action.themeId)
+                themeId: action.themeId.filter(el => el.themeId === action.themeId)
             }
         }
 
