@@ -1,4 +1,3 @@
-
 type ThemePropsType = {
     themeId: number
 }
@@ -24,4 +23,4 @@ export const themeReducer = (state = initState, action: changeThemeType): ThemeP
     }
 }
 
-export const changeThemeId = (id: number): changeThemeType => ({ type: 'SET_THEME_ID', id }) // fix any
+export const changeThemeId = (id: number): changeThemeType => ({type: 'SET_THEME_ID', id}) // fix any
