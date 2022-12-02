@@ -5,6 +5,7 @@ type ThemePropsType = {
 
 type changeThemeACType = ReturnType<typeof changeThemeId>
 
+
 const initState: ThemePropsType = {
     themeId: 1,
 }
@@ -16,7 +17,7 @@ export const themeReducer = (state = initState, action: changeThemeACType): Them
             return {
 
                 ...state,
-                themeId: action.themeId.filter(el => el.themeId === action.themeId)
+                themeId: action.themeId
             }
         }
 
