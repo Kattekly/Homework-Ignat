@@ -22,7 +22,8 @@ const HW12 = () => {
     // взять ид темы из редакса
     const themeId = 1
 
-    const change = (id: any) => { // дописать функцию
+
+    const change = (id: number) => { // дописать функцию
 
     }
 
@@ -40,6 +41,8 @@ const HW12 = () => {
                 <SuperSelect
                     id={'hw12-select-theme'}
                     className={s.select}
+                    options={themes}
+
                     // сделать переключение тем
 
                 />
