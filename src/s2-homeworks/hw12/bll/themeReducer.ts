@@ -3,8 +3,12 @@ type ThemePropsType = {
     themeId: number
 }
 
-type changeThemeACType = ReturnType<typeof changeThemeId>
-
+type changeThemeACType = ReturnType<typeof changeThemeAC>
+const changeThemeAC = (id: number) => {
+    return {
+        type: 'SET_THEME_ID', themeId: id
+    } as const
+}
 
 const initState: ThemePropsType = {
     themeId: 1,
