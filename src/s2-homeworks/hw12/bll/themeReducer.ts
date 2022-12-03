@@ -15,7 +15,6 @@ export const themeReducer = (state = initState, action: changeThemeType): ThemeP
                 themeId: action.id
             }
         }
-
         default:
             return state
     }
