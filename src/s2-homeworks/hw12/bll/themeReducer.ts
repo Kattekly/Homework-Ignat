@@ -21,13 +21,16 @@ export const themeReducer = (state = initState, action: changeThemeType): ThemeP
     }
 }
 
-type changeThemeType = ReturnType<typeof changeThemeIdAC>
+//Варианты типизации
+//1:
+/*type changeThemeType = ReturnType<typeof changeThemeIdAC>
 const changeThemeIdAC = (id: number) => {
     return {
         type: 'SET_THEME_ID', id
     } as const
-}
+}*/
 
-/*type changeThemeType = { type: 'SET_THEME_ID', id: number }*/
+//2:
+type changeThemeType = { type: 'SET_THEME_ID', id: number }
 
 export const changeThemeId = (id: number): changeThemeType => ({type: 'SET_THEME_ID', id}) // fix any
