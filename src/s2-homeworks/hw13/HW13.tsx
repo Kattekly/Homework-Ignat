@@ -37,12 +37,18 @@ const HW13 = () => {
                 setCode('Код 200!')
                 setImage(success200)
                 // дописать
+                setText(res.data.errorText)
+                setInfo(res.data.info)
 
             })
             .catch((e) => {
                 // дописать
                 setCode('Ошибка!')
                 setImage(errorUnknown)
+                setCode('Код 400!')
+                setImage(error400)
+                setCode('Код 500!')
+                setImage(error500)
             })
     }
 
@@ -57,7 +63,7 @@ const HW13 = () => {
                         onClick={send(true)}
                         xType={'secondary'}
                         // дописать
-                        disabled={}
+
                     >
                         Send true
                     </SuperButton>
