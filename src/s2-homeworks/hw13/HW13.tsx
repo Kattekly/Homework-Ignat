@@ -41,7 +41,8 @@ const HW13 = () => {
             })
             .catch((e) => {
                 // дописать
-
+                setCode('Ошибка!')
+                setImage(errorUnknown)
             })
     }
 
@@ -56,7 +57,7 @@ const HW13 = () => {
                         onClick={send(true)}
                         xType={'secondary'}
                         // дописать
-
+                        disabled={}
                     >
                         Send true
                     </SuperButton>
