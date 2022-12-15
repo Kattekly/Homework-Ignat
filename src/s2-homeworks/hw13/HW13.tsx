@@ -65,6 +65,11 @@ const HW13 = () => {
                     }
                 }
             })
+            .finally(() => {
+                setTimeout(() => {
+                    setDisabledButton(false)
+                }, 1000)
+            })
     }
 
     return (
