@@ -11,7 +11,6 @@ import s from './HW7.module.css'
 * 4 - сделать стили в соответствии с дизайном
 * */
 
-
 export type ArrType = {
     id: number
     value: string | number
