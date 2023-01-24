@@ -63,10 +63,12 @@ const HW15 = () => {
 
     const onChangePagination = (newPage: number, newCount: number) => {
         // делает студент
-
+        setPage(newPage)
+        setCount(newCount)
+        sendQuery({page: newPage, count: newCount, sort: sort})
+        setSearchParams(`page=${newPage}&count=${newCount}sort=${sort}`)
         // setPage(
         // setCount(
-
         // sendQuery(
         // setSearchParams(
 
